@@ -35,7 +35,7 @@ class Meal(models.Model):
     date = models.DateField(auto_now=True)
 
     def __str__(self):
-        return '{} ({})'.format(self.name, self.restaurant)
+        return '{} ({})'.format(self.name, self.category)
 
     class Meta:
         db_table = 'meal'

@@ -1,8 +1,6 @@
 from django.contrib.auth import get_user_model
-from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import ListView
 
-from docs.conf import templates_path
 from luncher.meals.models import Meal
 
 User = get_user_model()

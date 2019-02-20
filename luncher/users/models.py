@@ -1,7 +1,6 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django.urls import reverse
-from django.utils.translation import ugettext_lazy as _
 
 
 class Location(models.Model):
@@ -16,11 +15,22 @@ class Location(models.Model):
 
 
 class User(AbstractUser):
-    # First Name and Last Name do not cover name patterns
-    # around the globe.
-    name = models.CharField(_("Name of User"), blank=True, max_length=255)
+    class Meta(AbstractUser.Meta):
+        swappable = "AUTH_USER_MODEL"
+
     alias = models.CharField(max_length=100)
     location = models.ForeignKey(Location, on_delete=models.CASCADE, null=True, blank=True)
 
     def get_absolute_url(self):
         return reverse("users:detail", kwargs={"username": self.username})
+
+    @property
+    def full_name(self):
+        return '{} {}'.format(self.first_name, self.last_name)
+
+    def __str__(self):
+        return '{}, {}'.format(self.full_name, self.location)
+
+    @property
+    def can_order_meal(self):
+        return self.is_active and self.is_authenticated

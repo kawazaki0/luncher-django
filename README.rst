@@ -29,11 +29,12 @@ The created user can be used in http://0.0.0.0:8000/admin/ to provision database
 
 3. If you are want to run django outside the container, these commands will be useful::
 
-    python -m venv .venv
-    source .venv/bin/activate
-    pip install -r requirements/local.txt
     docker-compose up -d postgres
-    python manage.py runserver
+    ./tools/local_venv.sh
+    source .venv/bin/activate
+    python manage.py migrate
+    ./tools/createsuperuser.sh admin admin@admin.com secretpassword
+    python manage.py runserver 0.0.0.0:8000
 
 Where to find answers about this cookiecutter mess
 --------------------------------------------------

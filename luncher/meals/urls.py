@@ -6,5 +6,5 @@ from luncher.meals.views import (
 
 app_name = "meals"
 urlpatterns = [
-    path("menu/", view=meal_list_view, name="list"),
+    path("", view=meal_list_view, name="list"),
 ]
