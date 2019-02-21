@@ -7,6 +7,13 @@ from django.views import defaults as default_views
 
 urlpatterns = [
     path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
+
+    path(
+        "menu/",
+        include("luncher.meals.urls", namespace="meals"),
+    ),
+
+    # path("menu/", TemplateView.as_view(template_name="pages/menu.html"), name="menu"),
     path(
         "about/",
         TemplateView.as_view(template_name="pages/about.html"),
