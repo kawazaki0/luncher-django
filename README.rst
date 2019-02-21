@@ -10,77 +10,32 @@ Luncher from Hackathon
 
 :License: MIT
 
+Getting started for development
+-------------------------------
 
-Settings
---------
+1. Run::
 
-Moved to settings_.
+    docker-compose build
+    docker-compose up
 
-.. _settings: http://cookiecutter-django.readthedocs.io/en/latest/settings.html
+to build and run two containers `postgres` and `django`. The app should be available at http://0.0.0.0:8000/
 
-Basic Commands
---------------
+2. You might want to prepare database::
 
-Setting Up Your Users
-^^^^^^^^^^^^^^^^^^^^^
+    docker-compose run --rm django python manage.py migrate
+    docker-compose run --rm django python manage.py createsuperuser
 
-* To create a **normal user account**, just go to Sign Up and fill out the form. Once you submit it, you'll see a "Verify Your E-mail Address" page. Go to your console to see a simulated email verification message. Copy the link into your browser. Now the user's email should be verified and ready to go.
+The created user can be used in http://0.0.0.0:8000/admin/ to provision database.
 
-* To create an **superuser account**, use this command::
+3. If you are want to run django outside the container, these commands will be useful::
 
-    $ python manage.py createsuperuser
+    python -m venv .venv
+    source .venv/bin/activate
+    pip install -r requirements/local.txt
+    docker-compose up -d postgres
+    python manage.py runserver
 
-For convenience, you can keep your normal user logged in on Chrome and your superuser logged in on Firefox (or similar), so that you can see how the site behaves for both kinds of users.
+Where to find answers about this cookiecutter mess
+--------------------------------------------------
 
-Type checks
-^^^^^^^^^^^
-
-Running type checks with mypy:
-
-::
-
-  $ mypy luncher
-
-Test coverage
-^^^^^^^^^^^^^
-
-To run the tests, check your test coverage, and generate an HTML coverage report::
-
-    $ coverage run -m pytest
-    $ coverage html
-    $ open htmlcov/index.html
-
-Running tests with py.test
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-::
-
-  $ pytest
-
-Live reloading and Sass CSS compilation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Moved to `Live reloading and SASS compilation`_.
-
-.. _`Live reloading and SASS compilation`: http://cookiecutter-django.readthedocs.io/en/latest/live-reloading-and-sass-compilation.html
-
-
-
-
-
-Deployment
-----------
-
-The following details how to deploy this application.
-
-
-
-Docker
-^^^^^^
-
-See detailed `cookiecutter-django Docker documentation`_.
-
-.. _`cookiecutter-django Docker documentation`: http://cookiecutter-django.readthedocs.io/en/latest/deployment-with-docker.html
-
-
-
+Main page: https://cookiecutter-django.readthedocs.io/en/latest/index.html

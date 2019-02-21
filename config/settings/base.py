@@ -33,12 +33,12 @@ USE_I18N = True
 USE_L10N = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#use-tz
 USE_TZ = True
-
 # DATABASES
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
+postgres_from_docker = "postgres://luncher:luncher@localhost:15432/luncher"
 DATABASES = {
-    'default': env.db('DATABASE_URL'),
+    'default': (env.db('DATABASE_URL', default=postgres_from_docker)),
 }
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 
@@ -70,6 +70,7 @@ THIRD_PARTY_APPS = [
 ]
 LOCAL_APPS = [
     'luncher.users.apps.UsersAppConfig',
+    'luncher.meals.apps.MealsConfig'
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
