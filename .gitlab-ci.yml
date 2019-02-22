@@ -1,0 +1,50 @@
+---
+stages:
+  - lint
+
+flake8:
+  stage: lint
+  tags:
+    - executor_docker
+  image: python:3.6-slim
+  script:
+    - cat /etc/resolv.conf
+    - whoami
+    - pwd
+    - pip -V
+    - pip install -r requirements/local.txt
+    - flake8
+
+lint_dockerfile:
+  stage: lint
+  tags:
+    - executor_docker
+  allow_failure: true  # TODO remove after dockerfiles cleanups
+  image: hadolint/hadolint:latest-debian
+  script:
+    - find * -type f -name "Dockerfile*" -print0 | xargs -0 -n1 hadolint
+
+pycodestyle:
+  stage: lint
+  tags:
+    - executor_docker
+  image: python:3.6-slim
+  script:
+    - whoami
+    - pwd
+    - pip -V
+    - pip install pycodestyle
+    - find . -name '*.py' -not -path './app/__init__.py' | xargs pycodestyle
+
+yamllint:
+  stage: lint
+  tags:
+    - executor_docker
+  image: python:3.6-slim
+  script:
+    - cat /etc/resolv.conf
+    - whoami
+    - pwd
+    - pip -V
+    - pip install yamllint
+    - yamllint .
