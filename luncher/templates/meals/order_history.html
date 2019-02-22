@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="from_date">From:</label>
+        <input id="from_date" name="from" type="date" {% if from %} value="{{ from }}" {% endif %}
+               class="form-control">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="to_date">to:</label>
+        <input id="to_date" name="to" type="date" {% if to %} value="{{ to }}" {% endif %}
+               class="form-control">
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+
+  <div class="div" style="margin-top:30px;">
+    {% if orders_history %}
+      <table class="table">
+        <thead>
+        <tr>
+          <th scope="col">Restaurant</th>
+          <th scope="col">Money spent</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for h in orders_history %}
+          <tr>
+            <td>{{ h.restaurant }}</td>
+            <td>{{ h.payments }} PLN</td>
+          </tr>
+        {% endfor %}
+
+        </tbody>
+        <tfoot>
+        <tr>
+          <th scope="row">
+            TOTAL:
+          </th>
+          <th scope="row">
+            {{ orders_total }} PLN
+          </th>
+        </tr>
+        </tfoot>
+      </table>
+
+    {% endif %}
+  </div>
+
+{% endblock %}
