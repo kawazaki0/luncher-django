@@ -84,7 +84,7 @@ yum_repos:
     enabled: true
     failovermethod: priority
     gpgcheck: true
-    gpgkey: 'http://mirror.onet.pl/pub/mirrors/fedora/linux/epel/RPM-GPG-KEY-EPEL-7'
+    gpgkey: 'https://archive.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7'
     name: EPEL
     mirrorlist: 'http://mirrors.fedoraproject.org/mirrorlist?repo=epel-$releasever&arch=$basearch'
     metalink: 'https://mirrors.fedoraproject.org/metalink?repo=epel-$releasever&arch=$basearch'
@@ -138,7 +138,7 @@ runcmd:
   - "systemctl enable cockpit.socket"
   - "yum remove -y ntpd"
   - "yum-config-manager -y --add-repo 'https://download.docker.com/linux/centos/docker-ce.repo'"
-  - "yum -y install docker-ce"
+  - "yum -y install docker-ce docker-compose"
   - "groupadd docker"
   - "systemctl enable docker"
   - "systemctl start docker"
