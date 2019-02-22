@@ -3,6 +3,9 @@ stages:
   - lint
   - test
 
+before_script:
+  - sudo -E chown -R $USER $HOME/
+
 flake8:
   stage: lint
   tags:
