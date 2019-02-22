@@ -1,0 +1,73 @@
+---
+stages:
+  - lint
+  - test
+  - cleanup_docker
+  - cleanup_ownership
+
+before_script:
+  - test $EUID -eq 0 || sudo -E chown -R $USER $HOME
+
+flake8:
+  stage: lint
+  tags:
+    - executor_docker
+  image: python:3.6-slim
+  script:
+    - cat /etc/resolv.conf
+    - whoami
+    - pwd
+    - pip -V
+    - pip install -r requirements/local.txt
+    - flake8
+
+lint_dockerfile:
+  stage: lint
+  tags:
+    - executor_docker
+  allow_failure: true  # TODO remove after dockerfiles cleanups
+  image: hadolint/hadolint:latest-debian
+  script:
+    - find * -type f -name "Dockerfile*" -print0 | xargs -0 -n1 hadolint
+
+pycodestyle:
+  stage: lint
+  tags:
+    - executor_docker
+  image: python:3.6-slim
+  script:
+    - whoami
+    - pwd
+    - pip -V
+    - pip install pycodestyle
+    - find . -name '*.py' -not -path './app/__init__.py' | xargs pycodestyle
+
+yamllint:
+  stage: lint
+  tags:
+    - executor_docker
+  image: python:3.6-slim
+  script:
+    - cat /etc/resolv.conf
+    - whoami
+    - pwd
+    - pip -V
+    - pip install yamllint
+    - yamllint .
+
+docker_compose:
+  stage: test
+  tags:
+    - executor_shell
+  before_script:
+    - sudo -E chown -R $USER $HOME
+  script:
+    - cat /etc/resolv.conf
+    - whoami
+    - pwd
+    - docker --version
+    - docker-compose --version
+    - docker-compose run --rm django python manage.py test
+  after_script:
+    - docker-compose down --timeout 30
+    - test $EUID -eq 0 || sudo -E chown -R $USER $HOME
