@@ -67,6 +67,7 @@ docker_compose:
     - pwd
     - docker --version
     - docker-compose --version
+    - docker-compose build
     - docker-compose run --rm django python manage.py test
   after_script:
     - docker-compose down --timeout 30
