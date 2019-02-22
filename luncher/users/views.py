@@ -13,17 +13,11 @@ class UserDetailView(LoginRequiredMixin, DetailView):
     slug_url_kwarg = "username"
 
 
-user_detail_view = UserDetailView.as_view()
-
-
 class UserListView(LoginRequiredMixin, ListView):
 
     model = User
     slug_field = "username"
     slug_url_kwarg = "username"
-
-
-user_list_view = UserListView.as_view()
 
 
 class UserUpdateView(LoginRequiredMixin, UpdateView):
@@ -38,15 +32,9 @@ class UserUpdateView(LoginRequiredMixin, UpdateView):
         return User.objects.get(username=self.request.user.username)
 
 
-user_update_view = UserUpdateView.as_view()
-
-
 class UserRedirectView(LoginRequiredMixin, RedirectView):
 
     permanent = False
 
     def get_redirect_url(self):
         return reverse("users:detail", kwargs={"username": self.request.user.username})
-
-
-user_redirect_view = UserRedirectView.as_view()

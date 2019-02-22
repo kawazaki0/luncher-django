@@ -1,10 +1,9 @@
 from django.urls import path
 
-from luncher.meals.views import (
-    meal_list_view,
-)
+from .views import MealListView, OrderMealView
 
 app_name = "meals"
 urlpatterns = [
-    path("", view=meal_list_view, name="list"),
+    path("", view=MealListView.as_view(), name="list"),
+    path("order", view=OrderMealView.as_view(), name='order')
 ]
