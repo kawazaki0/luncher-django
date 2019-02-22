@@ -59,6 +59,8 @@ docker_compose:
   stage: test
   tags:
     - executor_shell
+  before_script:
+    - sudo -E chown -R $USER $HOME
   script:
     - cat /etc/resolv.conf
     - whoami
