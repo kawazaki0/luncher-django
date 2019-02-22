@@ -94,7 +94,7 @@ order_meal.short_description = 'Order selected meals'
 @admin.register(models.Meal)
 class MealAdmin(admin.ModelAdmin, ActionMixin):
     list_display = ('name', 'category', 'price', 'restaurant', 'date')
-    list_filter = ('category', 'price', 'restaurant')
+    list_filter = ('category', 'date', 'restaurant')
     search_fields = ('name', 'category', 'price', 'restaurant')
     readonly_fields = ('date',)
     fieldsets = (
