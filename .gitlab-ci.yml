@@ -4,7 +4,7 @@ stages:
   - test
 
 before_script:
-  - sudo -E chown -R $USER $HOME/
+  - test $EUID -eq 0 || sudo -E chown -R $USER $HOME
 
 flake8:
   stage: lint
