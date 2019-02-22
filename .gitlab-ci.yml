@@ -1,6 +1,7 @@
 ---
 stages:
   - lint
+  - test
 
 flake8:
   stage: lint
@@ -48,3 +49,15 @@ yamllint:
     - pip -V
     - pip install yamllint
     - yamllint .
+
+docker_compose:
+  stage: test
+  tags:
+    - executor_shell
+  script:
+    - cat /etc/resolv.conf
+    - whoami
+    - pwd
+    - docker --version
+    - docker-compose --version
+    - docker-compose run --rm django python manage.py test
