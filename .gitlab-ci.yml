@@ -2,9 +2,8 @@
 stages:
   - lint
   - test
-
-before_script:
-  - test $EUID -eq 0 || sudo -E chown -R $USER $HOME
+  - cleanup_docker
+  - cleanup_ownership
 
 flake8:
   stage: lint
@@ -64,5 +63,19 @@ docker_compose:
     - docker --version
     - docker-compose --version
     - docker-compose run --rm django python manage.py test
-  after_script:
+
+cleanup_docker:
+  stage: cleanup_docker
+  when: always
+  tags:
+    - executor_shell
+  script:
     - docker-compose down --timeout 30
+
+cleanup_ownership:
+  stage: cleanup_ownership
+  when: always
+  tags:
+    - executor_shell
+  script:
+    - test $EUID -eq 0 || sudo -E chown -R $USER $HOME
