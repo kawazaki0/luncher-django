@@ -1,0 +1,162 @@
+#cloud-config
+
+
+# please read openstack.md first.
+
+
+preserve_hostname: false
+hostname: c7-gitlab-runner
+timezone: UTC
+write_files:
+  - content: |
+      vm.dirty_background_ratio=50
+      vm.dirty_expire_centisecs=60000
+      vm.dirty_ratio=80
+      vm.dirty_writeback_centisecs=2000
+      vm.swappiness=1
+      vm.vfs_cache_pressure=50
+    path: /etc/sysctl.d/01-disk-tune.conf
+  - content: |
+      PATH=/sbin:/bin:/usr/sbin:/usr/bin
+      0 5 * * * root docker system prune --all --volumes --force >> /var/log/docker_prune.log 2>&1
+    path: /etc/cron.d/docker-prune
+  - content: |
+      /var/log/docker_prune.log {
+          missingok
+          nocreate
+          sharedscripts
+      }
+    path: /etc/logrotate.d/docker-prune
+  - content: |
+      gitlab-runner ALL=(ALL) NOPASSWD:ALL
+    path: /etc/sudoers.d/gitlab-runner
+
+users:
+  - name: 'msochon'
+    gecos: 'Michal Sochon'
+    groups: 'users'
+    lock_passwd: false
+    passwd: '$6$GzFUQKeT$UqM5wEjxrCrHJGhfY6DZ.ro2s772Yhg99jjBS3GqlS8Ww8nXFPlzZsmjtvM7so7wM1q2zWtgbgUWrCP5YTaPT1'
+    ssh_authorized_keys:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHIrfbyovknm/JwRPVy/davriicI/RwZPlEI95e+\
+        d+Yd41aHmh9wRg6SrEHNa4W3EaJ6oR8lQaHW5ZpmdR9mZk4gKgJIY6ldjbVLCrqJtdwJ4n4knlczchx\
+        QO7WwGKuGZc5QwYC6DkEeLDq3cDo+YvHMwoKR8wUulpM40db6sLYgaz2/czLzkOfmWk6aHMOcC+me5W\
+        6FUhMtDWf9x4NEMrwsrTfDCZdTLLtYZCBEakZuGVB+oX7P3pvMeim3z/X1OGV6yTmkomUfnoRTNSIdO\
+        rZEOXmDnZ8pbz7fMwl5GgUsLs4L6Egk+LfP0RKJfaSXIW+UU2/kt/Huowvz4ICWG1 kaszpir@ativ"
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCzto6YUwjRxsPXRQPfrD2webbK1jaMkBte3XAfee\
+        DLMoiDvL/UR+nu7WaSX2t1PbLtE/wE+f/L7xG01fu9pFFamdDQEkwnFM7I6og6xrB/jfJzrEVnTy5P2\
+        V2Ga0PjDuxCq1sH8y+BuNIX/h1udZG8ZDTaQ93FKc75wUapDEOEPSkG/3Fak/ckqOzPkmFlOoDYx/GU\
+        0dChINcRaryLpF1riE9iojAvVdlmln7V7xwM47rwGyQsQYgCkxcpPGXdZgTTalQ/7zRlZJxJxoF2+8M\
+        gDtNkmlUs00+6TVKEJTvdALBca4k1o3gc3keaj15hhqqpKWFqj930c0b0CLVf57Ybs6qOlaxLTZ+KPT\
+        4Im0rin3V3ZlsF5EtW7kSmAYmxfwFmwQm91F4ZI8NSCm17E6wQ9KHrKuJhcp7PgQhJ6b41zi6B8tZLP\
+        Pshx04pPx4VeUMQfIDsC586FdkdkZZz5lgGelCAhByoabO6BjkwpnKKGAG3GDk1BxeYCkdRpsYESg/L\
+        mMD2bdEqZ/7Sm6KrdQ9WbwETBs2OzO9dCDMD1kxieJE12XRng9K4HxdDOQTMRsAODFd4OUsH1gIBtaG\
+        lLea5Qs8ZWn5qOel9wFjOXecIfM8lkitYSf1R5NkT7IvhWJw5fKoiBiExtpPUOJke2QfpyUFDBssZS/\
+        FKCLpbIIwxvw== kaszpir@codilime"
+    sudo: "ALL=(ALL) ALL"
+    shell: "/bin/bash"
+
+  - name: 'jluk'
+    gecos: 'Jaroslaw Lukow'
+    groups: 'users'
+    lock_passwd: false
+    # passwd: ''
+    ssh_authorized_keys:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCvHlOvM6E0vBQHEhBsBsULqtaySmpvi50c4zp8zp\
+        Wqnl4Br1jc4aABpnmM3EmBAfSlKjbk3LK1N1PHdh7m+ADwpumWX1MnVh1BZqL9Cm5r0pBEfZEpslqWb\
+        wsD+ym6RkJ8OdQB7uHjvbQ6xYma4ptEaXaq4UGcWUiLICt4tTEy9P2YZBZfGXv4XWJfBWUr2UhK3MbG\
+        Omquk3grB9OmesBZYG88UXcFy15NWEFIXQZsBIEU7jFtAEVpDhVN7aNYH+CvOU7AQ/pgqlRv1+ZTrDe\
+        hAlp93eONAs9sxxyL2QF7O8v+O2doPiIW2QO3ila852c0qo3udM0DAfWYhbJPYC4PAVuTYdLx18RkLB\
+        XlfE8JPFf+UOJ63lQGqTn8vyhUfjpW+3OAY0/xGzZncDvGqbBEQ/N6zQAxAlKOmAb0b5oaUyFLnJ3Kr\
+        YS3yDAHXl8E98PPDkoIyHQ+pNo3EBLNe91MJ5kMEiL/zU7gc4stNFT6HZQJNObQu200yKBFdjAgYM/B\
+        qbUk5YkrQMo3qpTZk1fP2TuLLmJADwEQ7yLZq88J6vqDsQqReQtGn/espwwjTi7uVfoYovdVkmrXw8B\
+        pKk9ti5R2+K/eFDCO85MxVpp+2/45noH8+mtDj+FGOx1P+Y0sqVP0ePYbASKngcm0HDVWdg2ZFA7GuE\
+        7CtS3EPzgAKw== jluk@jluk"
+    sudo: "ALL=(ALL) ALL"
+    shell: "/bin/bash"
+
+locale: en_US.UTF-8
+
+yum_repos:
+  epel:
+    # yamllint disable rule:line-length
+    baseurl: 'http://download.fedoraproject.org/pub/epel/7/$basearch'
+    enabled: true
+    failovermethod: priority
+    gpgcheck: true
+    gpgkey: 'http://mirror.onet.pl/pub/mirrors/fedora/linux/epel/RPM-GPG-KEY-EPEL-7'
+    name: EPEL
+    mirrorlist: 'http://mirrors.fedoraproject.org/mirrorlist?repo=epel-$releasever&arch=$basearch'
+    metalink: 'https://mirrors.fedoraproject.org/metalink?repo=epel-$releasever&arch=$basearch'
+    # yamllint enable
+
+packages:
+  - acpid
+  - bind-utils
+  - chrony
+  - cockpit
+  - cockpit-dashboard
+  - cockpit-docker
+  - cockpit-packagekit
+  - cockpit-selinux
+  - cockpit-storaged
+  - cockpit-system
+  - curl
+  - deltarpm
+  - dstat
+  - epel-release
+  - git
+  - htop
+  - jq
+  - kexec-tools
+  - linux-firmware
+  - lvm2
+  - mc
+  - microcode_ctl
+  - multitail
+  - nc
+  - pbzip2
+  - redhat-lsb-core
+  - rsync
+  - tmux
+  - tree
+  - wget
+
+package_update: true
+package_upgrade: true
+package_reboot_if_required: true
+
+runcmd:
+  - "rpm --import 'https://www.elrepo.org/RPM-GPG-KEY-elrepo.org'"
+  - "rpm -Uvh 'http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm'"
+  - "yum -y --enablerepo=elrepo-kernel install kernel-ml"
+  - "grub2-set-default 0"
+  - "systemctl enable acpid"
+  - "systemctl enable chronyd"
+  - "systemctl start acpid"
+  - "systemctl start chronyd"
+  - "systemctl enable cockpit.socket"
+  - "yum remove -y ntpd"
+  - "yum-config-manager -y --add-repo 'https://download.docker.com/linux/centos/docker-ce.repo'"
+  - "yum -y install docker-ce"
+  - "groupadd docker"
+  - "systemctl enable docker"
+  - "systemctl start docker"
+  - "restorecon -FRvv /home/"
+  # gitlab-runner
+  - "curl -q -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.rpm.sh 2>/dev/null | bash"
+  - "yum install -y gitlab-runner"
+  - "usermod -aG docker gitlab-runner"
+  - "gitlab-runner register --non-interactive --name misiek-ostack-vm-centos7-docker --url https://cl-gitlab.intra.codilime.com/ --registration-token 'CHANGE_ME' --executor docker --tag-list 'executor_docker' --docker-image ubuntu"
+  - "gitlab-runner register --non-interactive --name misiek-ostack-vm-centos7-shell --url https://cl-gitlab.intra.codilime.com/ --registration-token 'CHANGE_ME' --executor shell --shell bash --tag-list 'executor_shell'"
+  - "sed -i -e \"s|concurrent = 1|concurrent = $(nproc)|g\" /etc/gitlab-runner/config.toml"
+  - "systemctl enable gitlab-runner"
+  - "systemctl start gitlab-runner"
+  - "mkdir -p /srv/deploy_review/ /srv/deploy_staging/"
+  - "chown -R gitlab-runner:gitlab-runner /srv/deploy_review/ /srv/deploy_staging/"
+
+
+power_state:
+  mode: reboot
+  message: cloudinit says byebye
+  timeout: 60

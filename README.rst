@@ -40,3 +40,9 @@ Where to find answers about this cookiecutter mess
 --------------------------------------------------
 
 Main page: https://cookiecutter-django.readthedocs.io/en/latest/index.html
+
+
+Continuous Integration
+======================
+
+See directory `provision` for more info.

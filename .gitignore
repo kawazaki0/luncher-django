@@ -332,3 +332,6 @@ luncher/media/
 !.envs/.local/
 
 .idea/
+
+# provisioning tools
+provision/.gitlab-token.sh
