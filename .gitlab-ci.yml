@@ -30,18 +30,6 @@ lint_dockerfile:
   script:
     - find * -type f -name "Dockerfile*" -print0 | xargs -0 -n1 hadolint
 
-pycodestyle:
-  stage: lint
-  tags:
-    - executor_docker
-  image: python:3.6-slim
-  script:
-    - whoami
-    - pwd
-    - pip -V
-    - pip install pycodestyle
-    - find . -name '*.py' -not -path './app/__init__.py' | xargs pycodestyle
-
 yamllint:
   stage: lint
   tags:
@@ -67,6 +55,8 @@ docker_compose:
     - pwd
     - docker --version
     - docker-compose --version
+    - docker-compose build
+    - docker-compose run --rm django python manage.py migrate
     - docker-compose run --rm django python manage.py test
   after_script:
     - docker-compose down --timeout 30
