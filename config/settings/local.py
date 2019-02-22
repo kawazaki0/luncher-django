@@ -1,4 +1,5 @@
 from .base import *  # noqa
+from .base import ALLOWED_EMAIL_DOMAINS
 from .base import env
 
 # GENERAL
@@ -67,3 +68,4 @@ INSTALLED_APPS += ['django_extensions']  # noqa F405
 # Your stuff...
 # ------------------------------------------------------------------------------
 INSTALLED_APPS += ['autofixture']
+ALLOWED_EMAIL_DOMAINS = ALLOWED_EMAIL_DOMAINS + ['gmail.com']
