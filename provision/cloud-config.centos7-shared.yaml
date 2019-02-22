@@ -94,13 +94,13 @@ packages:
   - acpid
   - bind-utils
   - chrony
-  - cockpit
-  - cockpit-dashboard
-  - cockpit-docker
-  - cockpit-packagekit
-  - cockpit-selinux
-  - cockpit-storaged
-  - cockpit-system
+  # - cockpit
+  # - cockpit-dashboard
+  # - cockpit-docker
+  # - cockpit-packagekit
+  # - cockpit-selinux
+  # - cockpit-storaged
+  # - cockpit-system
   - curl
   - deltarpm
   - dstat
