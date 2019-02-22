@@ -1,0 +1,30 @@
+---
+
+extends: default
+ignore: |
+  .git/
+  .vagrant/
+  .venv/
+  venv/
+  venv_luncher/
+
+rules:
+  comments:
+    ignore: |
+      provision/*
+  document-start:
+    ignore: |
+      provision/*
+  empty-lines:
+    max: 5
+    max-start: 4
+    max-end: 4
+  # 80 chars should be enough, but dont fail if a line is longer
+  line-length:
+    ignore: |
+      provision/*
+    max: 140
+    level: warning
+    allow-non-breakable-words: true
+    allow-non-breakable-inline-mappings: true
+  truthy: disable
