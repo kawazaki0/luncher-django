@@ -37,7 +37,7 @@ lint_shellcheck:
   allow_failure: true
   image: koalaman/shellcheck
   script:
-    - find * -type f -name "*.sh" | grep -v compose/production/postgres/ | xargs shellcheck
+    - find * -type f -name "*.sh" | grep -v compose/production/postgres/ | xargs -n1 shellcheck
 
 yamllint:
   stage: lint
