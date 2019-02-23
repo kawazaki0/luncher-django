@@ -38,6 +38,8 @@ lint_shellcheck:
   image: koalaman/shellcheck
   script:
     - set -x
+    - shellcheck --version
+    - find * -type f -name "*.sh" | grep -v compose/production/postgres/
     - find * -type f -name "*.sh" | grep -v compose/production/postgres/ | xargs -n1 shellcheck
 
 yamllint:
