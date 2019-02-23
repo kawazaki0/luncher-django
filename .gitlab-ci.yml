@@ -33,14 +33,11 @@ lint_dockerfile:
 lint_shellcheck:
   stage: lint
   tags:
-    - executor_docker
+    - executor_shell
   allow_failure: true
-  image: koalaman/shellcheck
   script:
-    - set -x
-    - shellcheck --version
-    - find * -type f -name "*.sh" | grep -v compose/production/postgres/
-    - find * -type f -name "*.sh" | grep -v compose/production/postgres/ | xargs -n1 shellcheck
+    - docker run -v "$PWD:/mnt:ro" koalaman/shellcheck --color=always --version
+    - find * -type f -name "*.sh" | grep -v compose/production/postgres/ | xargs docker run -v "$PWD:/mnt:ro" koalaman/shellcheck --color=always
 
 yamllint:
   stage: lint
