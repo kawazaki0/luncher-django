@@ -6,6 +6,7 @@ stages:
   - cleanup_ownership
 
 before_script:
+  # fix permissions if executing in docker
   - test $EUID -eq 0 || sudo -E chown -R $USER $HOME
 
 flake8:
@@ -48,16 +49,29 @@ docker_compose:
   tags:
     - executor_shell
   before_script:
-    - sudo -E chown -R $USER $HOME
-  script:
     - cat /etc/resolv.conf
     - whoami
     - pwd
     - docker --version
     - docker-compose --version
+    - sudo -E chown -R $USER $HOME
     - docker-compose build
-    - docker-compose run --rm django python manage.py migrate
-    - docker-compose run --rm django python manage.py test
+    - docker-compose up -d
+  script:
+    - docker ps
+    - docker-compose run django python manage.py migrate
+    - docker-compose run django python manage.py test
+    - docker-compose run django coverage run manage.py test luncher
+    - docker-compose run django coverage report
+    - docker-compose run django coverage html
+    - docker-compose run django coverage xml
+  coverage: '/^TOTAL\s+\d+\s+\d+\s+(\d+\%)$/'
   after_script:
     - docker-compose down --timeout 30
     - test $EUID -eq 0 || sudo -E chown -R $USER $HOME
+  artifacts:
+    name: "$CI_JOB_NAME-$CI_COMMIT_REF_NAME"
+    paths:
+      - htmlcov
+      - coverage.xml
+  dependencies: []
