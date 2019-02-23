@@ -110,6 +110,7 @@ packages:
   - jq
   - kexec-tools
   - linux-firmware
+  - lockfile-progs
   - lvm2
   - mc
   - microcode_ctl
