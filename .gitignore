@@ -335,3 +335,4 @@ luncher/media/
 
 # provisioning tools
 provision/.gitlab-token.sh
+provision/cloud-config.yaml

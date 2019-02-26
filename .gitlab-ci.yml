@@ -49,12 +49,13 @@ docker_compose:
   tags:
     - executor_shell
   before_script:
+    - lockfile-create --verbose --retry 60 --lock-name /tmp/${CI_RUNNER_ID}.docker_compose.lock
+    - ls -la /tmp/*.lock
     - cat /etc/resolv.conf
     - whoami
     - pwd
     - docker --version
     - docker-compose --version
-    - sudo -E chown -R $USER $HOME
     - docker-compose build
     - docker-compose up -d
   script:
@@ -69,6 +70,7 @@ docker_compose:
   after_script:
     - docker-compose down --timeout 30
     - test $EUID -eq 0 || sudo -E chown -R $USER $HOME
+    - lockfile-remove --verbose --lock-name /tmp/${CI_RUNNER_ID}.docker_compose.lock
   artifacts:
     name: "$CI_JOB_NAME-$CI_COMMIT_REF_NAME"
     paths:
