@@ -3,6 +3,14 @@ Luncher
 
 Luncher from Hackathon
 
+.. image:: https://cl-gitlab.intra.codilime.com/luncher-hackathon-team/luncher-django/badges/master/pipeline.svg
+    :target: https://cl-gitlab.intra.codilime.com/luncher-hackathon-team/luncher-django/commits/master
+    :alt: Last pipeline status from master
+
+.. image:: https://cl-gitlab.intra.codilime.com/luncher-hackathon-team/luncher-django/badges/master/coverage.svg
+    :target: https://cl-gitlab.intra.codilime.com/luncher-hackathon-team/luncher-django/-/jobs/artifacts/master/download?job=docker_compose
+    :alt: Last coverage status + download zip from master
+
 .. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg
      :target: https://github.com/pydanny/cookiecutter-django/
      :alt: Built with Cookiecutter Django
