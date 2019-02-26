@@ -26,10 +26,19 @@ lint_dockerfile:
   stage: lint
   tags:
     - executor_docker
-  allow_failure: true  # TODO remove after dockerfiles cleanups
+  allow_failure: true
   image: hadolint/hadolint:latest-debian
   script:
     - find * -type f -name "Dockerfile*" -print0 | xargs -0 -n1 hadolint
+
+lint_shellcheck:
+  stage: lint
+  tags:
+    - executor_shell
+  allow_failure: true
+  script:
+    - docker run -v "$PWD:/mnt:ro" koalaman/shellcheck --color=always --version
+    - find * -type f -name "*.sh" | grep -v compose/production/postgres/ | xargs docker run -v "$PWD:/mnt:ro" koalaman/shellcheck --color=always
 
 yamllint:
   stage: lint
