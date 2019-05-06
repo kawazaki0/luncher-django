@@ -199,3 +199,4 @@ LOGGING = {
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+GOOGLE_ACCOUNT_ALLOW_REGISTRATION = False

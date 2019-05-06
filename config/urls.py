@@ -13,7 +13,6 @@ urlpatterns = [
         include("luncher.meals.urls", namespace="meals"),
     ),
 
-    # path("menu/", TemplateView.as_view(template_name="pages/menu.html"), name="menu"),
     path(
         "about/",
         TemplateView.as_view(template_name="pages/about.html"),
