@@ -6,7 +6,7 @@ from django.db.models import Sum
 from luncher.meals.models import Restaurant, UserOrder
 
 
-def is_user_able_to_order_meal():
+def is_it_time_to_make_orders():
     threshold_time = pendulum.today('UTC').set(hour=11)
     now = pendulum.now('UTC')
     return now <= threshold_time

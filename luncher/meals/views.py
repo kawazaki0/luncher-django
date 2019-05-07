@@ -1,9 +1,13 @@
+import datetime
+
+from django.contrib import messages
 from django.contrib.auth import get_user_model
-from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
-from django.forms import ValidationError
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import UserPassesTestMixin
 from django.http import HttpResponseRedirect
 from django.urls import reverse
-from django.views.generic import CreateView, ListView, TemplateView
+from django.views.generic import ListView, FormView
+from django.views.generic import TemplateView
 
 from luncher.meals import usecase
 from .forms import OrderMealForm
@@ -17,25 +21,25 @@ class MealListView(ListView):
     slug_field = "name"
     slug_url_kwarg = "name"
     templates_name = "meals/meal_list.html"
+    queryset = Meal.objects.filter(date=datetime.date.today())
 
 
-class OrderMealView(LoginRequiredMixin, CreateView):
+class OrderMealView(LoginRequiredMixin, FormView):
     form_class = OrderMealForm
     template_name = 'meals/meal_order_form.html'
 
-    def form_valid(self, form):
-        if not self.request.user.can_order_meal or not usecase.is_user_able_to_order_meal():
-            raise ValidationError(
-                "You don't have permissions to order meal.")  # TODO: return error in proper way.
+    def get_form_kwargs(self):
+        form_kwargs = super().get_form_kwargs()
+        form_kwargs['user'] = self.request.user
+        return form_kwargs
 
-        # inject authorized user into model
-        order = form.save(commit=False)
-        order.user = self.request.user
-        order.save()
+    def form_valid(self, form):
+        form.save()
+        messages.success(self.request, "Successful ordered")
         return HttpResponseRedirect(self.get_success_url())
 
     def get_success_url(self):
-        return reverse('meals:list', kwargs={})
+        return reverse('meals:list')
 
 
 class UserIsAdminMixin(UserPassesTestMixin):

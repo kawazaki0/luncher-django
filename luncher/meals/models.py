@@ -29,10 +29,11 @@ class MealCategory(models.Model):
 
 class Meal(models.Model):
     name = models.CharField(max_length=1000)  # string
-    category = models.ForeignKey(MealCategory, on_delete=models.CASCADE, null=True, blank=True)
+    category = models.ForeignKey(
+        MealCategory, on_delete=models.CASCADE, null=True, blank=True)
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    date = models.DateField(auto_now=True)
+    date = models.DateField()
 
     def __str__(self):
         return '{} ({})'.format(self.name, self.category)
@@ -44,6 +45,7 @@ class Meal(models.Model):
 class UserOrder(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     meal = models.ForeignKey(Meal, on_delete=models.CASCADE)
+    quantity = models.PositiveIntegerField()
     timestamp = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

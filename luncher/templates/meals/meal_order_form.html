@@ -2,9 +2,21 @@
 
 {% block content %}
 
-  <form action="" method="post">
-    {% csrf_token %}
-    {{ form }}
+{% if form.non_field_errors %}
+  <div class="alert alert-error"> {{ form.non_field_errors }} </div>
+{% endif %}
+
+
+<form action="" method="post">
+{% csrf_token %}
+  {% for form_field in form %}
+  <div>
+  {%  if field.errors %}
+      <div class="alert alert-error"> {{ field.errors }} </div>
+  {% endif %}
+  {{ form_field.label_tag }}{{ form_field }}
+  </div>
+  {% endfor %}
     <input type="submit" value="Submit">
 </form>
 
