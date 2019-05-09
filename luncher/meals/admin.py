@@ -96,7 +96,6 @@ class MealAdmin(admin.ModelAdmin, ActionMixin):
     list_display = ('name', 'category', 'price', 'restaurant', 'date')
     list_filter = ('category', 'date', 'restaurant')
     search_fields = ('name', 'category', 'price', 'restaurant')
-    readonly_fields = ('date',)
     fieldsets = (
         (None, {
             'fields': [
@@ -150,7 +149,7 @@ class UserOrderAdmin(admin.ModelAdmin, ActionMixin):
         if not request.user.can_order_meal:
             raise ValidationError("you can't order meal, get in touch with your supervisor")
 
-        if change is False and not usecase.is_user_able_to_order_meal():
+        if change is False and not usecase.is_it_time_to_make_orders():
             # if this is create request and user can't order meal
             raise ValidationError("can't order meal past 11")
 

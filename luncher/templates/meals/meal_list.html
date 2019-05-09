@@ -2,8 +2,18 @@
 
 {% block content %}
 
-  {% for m in meal_list %}
-    {{ m }}
+  <h2>Today menu:</h2>
+
+  {% regroup meal_list by restaurant as meal_groups %}
+  {% for meal_group in meal_groups %}
+    <ul>
+      <b>{{ meal_group.grouper }}</b>
+      {% for meal in meal_group.list %}
+        <li>
+          {{ meal }}
+        </li>
+      {% endfor %}
+    </ul>
   {% endfor %}
 
 {% endblock %}
