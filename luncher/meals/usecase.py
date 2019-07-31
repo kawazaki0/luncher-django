@@ -5,11 +5,19 @@ from django.db.models import Sum
 
 from luncher.meals.models import Restaurant, UserOrder
 
+from luncher.meals.models import MealImporter
+
 
 def is_it_time_to_make_orders():
     threshold_time = pendulum.today('UTC').set(hour=11)
     now = pendulum.now('UTC')
     return now <= threshold_time
+
+
+def import_meals_from_file(f):
+    mi = MealImporter(f)
+    mi.parse()
+    mi.bulk_create()
 
 
 class OrderHistoryPayment:

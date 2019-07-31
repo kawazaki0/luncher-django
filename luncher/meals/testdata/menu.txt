@@ -1,0 +1,332 @@
+# Flanders Bistro
+
+06.02.2017
+
+
+Z - Żurek z białą kiełbaską  sour rye soup with weisswurst0
+Z - Żurek z białą kiełbaską  sour rye soup with weisswurst1
+Z - Żurek z białą kiełbaską  sour rye soup with weisswurst2
+Z - Żurek z białą kiełbaską  sour rye soup with weisswurst3
+P - (Danie mięsne) Pieczony udziec z indyka sosie kurkowym, kasza, surówka  (meat dish) Baked turkey leg in chanterelle sauce, kasha, salad
+P - (Danie mięsne) Panierowana rolada schabowa z boczkiem i suszoną śliwką, ziemniaki, buraczki  (meat dish) Pork roulade with bacon and dried plum, potatoes, beetroots
+P - (Danie mięsne) Frykadelki drobiowe, ziemniaki, surówka  (meat dish) Chicken meatball, potatoes, salad
+P - (danie miesne)Spaghetti bolognese  (meat dish) Spaghetti bolognese
+P - (danie mięsne)Parowana pierś kurczaka z grillowanymi warzywami, ryż, surówka  (meat dish) steamed chicken breast with grilled vegeatables, rice salad
+P - (danie mięsne)Pierogi z mięsem i okrasą  (meat dish)  dumplings with meat and pork scratchings
+P - (danie mięsne)Z kawałkami kurczaka panierowanymi w sezamie - mix sałat, świeże warzywa, kiełki słonecznika, sos miodowo-musztardowy  (meat dish) salad with slices of chicken breaded in sesame seed - mix of salads, fresh vegetables, sunflower sprouts, honey-mustard sauce
+P - (danie mięsne)Sałata Cesar – mix sałat, świeże warzywa, grillowany kurczak, grzanki czosnkowe, parmezan, sos Cesar (jogurtowo-majonezowy)   (meat dish)  Cesar salad - mix of salads, fresh vegetables, grilled chicken, garlic croutons, parmesan, yogurt-mayonnaise sauce
+P - (danie mięsne)Sałata z tuńczykiem – mix sałat, świeże warzywa, kukurydza, jajko, oliwki, sos vinegrette  (meat dish) Tuna salad - mix of salads, fresh vegetables, corn, egg, olives, vinegrette
+P - (danie mięsne)Sałata z łososiem – mix sałat, świeże warzywa, pomarańcza, kapary, sos vinegrette  (meat dish) Salmon salad - mix of salads, fresh vegetables, oragne, capers, vinegrette
+P - (danie mięsne)Sałata z serem lazur – mix sałat, warzywa, grillowany indyk, gruszka, orzechy włoskie, sos malinowo- balsamiczny  (meat dish) blue cheese salad - mix of salads, vegetables, grilles turkey, pear, walnuts, raspberry sauce
+P - (Wege) Tortilla z camembertem, warzywami i dipem curry  (vege) Tortilla with camembert,vegetables and curry dip
+P - (wege)Tortilla z warzywami i salsą pomidorowo-bazyliową  (vege) Tortilla with vegetables and tomato-basil sauce
+P - (wege)Camembert panierowany z żurawiną i ananasem  (vege)  breaded Camembert with cranberry and pineapple
+P - (wege)Pierogi ruskie  (vege) Dumplings stuffed with mixture of potatoes and cottage cheese
+P - (wege)Pierogi z kapustą i grzybami  (vege) Dumplings with sauerkraut and mushrooms
+P - (wege)Sałata z kaszą jaglaną – mix sałat, ser feta, pomidorki koktajlowe, rukola  (Wege) Salad with millet - mixed lettuce, feta cheese, cherry tomatoes, arugula
+P - (wege)Sałatka grecka – mix sałat, świeże warzywa, ser feta, oliwki, sos vinegrette  (Wege) "Greek" salad- lettuce mix, fresh vegetables, feta cheese, olives, vinaigrette
+P - (wege)Sałata z kozim serem – mix sałat, świeże warzywa, pomarańcza, żurawina, orzechy włoskie, sos balsamiczno-malinowy  (Wege)Salad with goat cheese  - lettuce mix, fresh vegetables, orange, cranberries, walnuts,, raspberry sauce
+
+07.02.2017
+
+Z - Kapuśniak na wędzonce z boczkiem  Cabbage soup with smoked meat and bacon0
+Z - Kapuśniak na wędzonce z boczkiem  Cabbage soup with smoked meat and bacon1
+Z - Kapuśniak na wędzonce z boczkiem  Cabbage soup with smoked meat and bacon2
+Z - Kapuśniak na wędzonce z boczkiem  Cabbage soup with smoked meat and bacon3
+P - (Danie mięsne) Karkówka pieczona w sosie myśliwskim, kasza, buraczki  (meat dish) Baked chine with hunter’s sauce, kasha, beetroots
+P - (danie mięsne)Antrykot z kurczaka w złocistej panierce, ziemniaki, marchewka z groszkiem  (meat dish) chicken entrecote, potatoes, carrot with green peas
+P - (Danie mięsne) Panierowane pałki kurczaka, ryż z warzywami, surówka  (meat dish) Breaded chicken legs, rice with vegetables, salad
+P - (danie mięsne)Penne carbonarra z kurczakiem, boczkiem, czosnkiem, chilli i sosem śmiatanowym  (meat dish) Penne carbonarra with chicken, bacon, garlic, chilli and creamy sauce
+P - (danie mięsne)Parowana pierś kurczaka z grillowanymi warzywami, ryż, surówka  (meat dish) steamed chicken breast with grilled vegeatables, rice salad
+P - (danie mięsne)Pierogi z mięsem i okrasą  (meat dish)  dumplings with meat and pork scratchings
+P - (danie mięsne)Z kawałkami kurczaka panierowanymi w sezamie - mix sałat, świeże warzywa, kiełki słonecznika, sos miodowo-musztardowy  (meat dish) salad with slices of chicken breaded in sesame seed - mix of salads, fresh vegetables, sunflower sprouts, honey-mustard sauce
+P - (danie mięsne)Sałata Cesar – mix sałat, świeże warzywa, grillowany kurczak, grzanki czosnkowe, parmezan, sos Cesar (jogurtowo-majonezowy)   (meat dish)  Cesar salad - mix of salads, fresh vegetables, grilled chicken, garlic croutons, parmesan, yogurt-mayonnaise sauce
+P - (danie mięsne)Sałata z tuńczykiem – mix sałat, świeże warzywa, kukurydza, jajko, oliwki, sos vinegrette  (meat dish) Tuna salad - mix of salads, fresh vegetables, corn, egg, olives, vinegrette
+P - (danie mięsne)Sałata z łososiem – mix sałat, świeże warzywa, pomarańcza, kapary, sos vinegrette  (meat dish) Salmon salad - mix of salads, fresh vegetables, oragne, capers, vinegrette
+P - (danie mięsne)Sałata z serem lazur – mix sałat, warzywa, grillowany indyk, gruszka, orzechy włoskie, sos malinowo- balsamiczny  (meat dish) blue cheese salad - mix of salads, vegetables, grilles turkey, pear, walnuts, raspberry sauce
+P - (Wege) Naleśniki ze szpinakiem i sosem serowym  (vege) Pancakes with spinach and cheese sauce
+P - (wege)Tortilla z warzywami i salsą pomidorowo-bazyliową  (vege) Tortilla with vegetables and tomato-basil sauce
+P - (wege)Camembert panierowany z żurawiną i ananasem  (vege)  breaded Camembert with cranberry and pineapple
+P - (wege)Pierogi ruskie  (vege) Dumplings stuffed with mixture of potatoes and cottage cheese
+P - (wege)Pierogi z kapustą i grzybami  (vege) Dumplings with sauerkraut and mushrooms
+P - (wege)Sałata z kaszą jaglaną – mix sałat, ser feta, pomidorki koktajlowe, rukola  (Wege) Salad with millet - mixed lettuce, feta cheese, cherry tomatoes, arugula
+P - (wege)Sałatka grecka – mix sałat, świeże warzywa, ser feta, oliwki, sos vinegrette  (Wege) "Greek" salad- lettuce mix, fresh vegetables, feta cheese, olives, vinaigrette
+P - (wege)Sałata z kozim serem – mix sałat, świeże warzywa, pomarańcza, żurawina, orzechy włoskie, sos balsamiczno-malinowy  (Wege)Salad with goat cheese  - lettuce mix, fresh vegetables, orange, cranberries, walnuts,, raspberry sauce
+
+
+08.02.2017
+
+Z - Rosół z makaronem  Chicken soup with pasta00
+Z - Rosół z makaronem  Chicken soup with pasta01
+Z - Rosół z makaronem  Chicken soup with pasta02
+Z - Rosół z makaronem  Chicken soup with pasta03
+P - (Danie mięsne) Pierś kurczaka panierowana w wiórkach kokosowych, ziemniaki, surówka  (meat dish) Chicken breast in coconut shreds, potatoes, salad
+P - (Danie mięsne) Schab duszony w sosie BBQ, kasza, buraczki  (meat dish) Stewed pork chop in BBQ sauce, kasha, beetroots
+P - (Danie mięsne) Pieczone udziki kurczaka, ziemniaki, surówka  (meat dish) Baked chicken legs, potatoes, salad
+P - (danie mięsne)Farfalle z kurczakiem szpinakiem, czosnkiem, rucolą w aromatycznym sosie z sera pleśniowego(meat dish) Farfalle with chicken, spinach, garlic, arugula in aromatic blue cheese sauce
+P - (danie mięsne)Parowana pierś kurczaka z grillowanymi warzywami, ryż, surówka  (meat dish) steamed chicken breast with grilled vegeatables, rice salad
+P - (danie mięsne)Pierogi z mięsem i okrasą  (meat dish)  dumplings with meat and pork scratchings
+P - (danie mięsne)Z kawałkami kurczaka panierowanymi w sezamie - mix sałat, świeże warzywa, kiełki słonecznika, sos miodowo-musztardowy  (meat dish) salad with slices of chicken breaded in sesame seed - mix of salads, fresh vegetables, sunflower sprouts, honey-mustard sauce
+P - (danie mięsne)Sałata Cesar – mix sałat, świeże warzywa, grillowany kurczak, grzanki czosnkowe, parmezan, sos Cesar (jogurtowo-majonezowy)   (meat dish)  Cesar salad - mix of salads, fresh vegetables, grilled chicken, garlic croutons, parmesan, yogurt-mayonnaise sauce
+P - (danie mięsne)Sałata z tuńczykiem – mix sałat, świeże warzywa, kukurydza, jajko, oliwki, sos vinegrette  (meat dish) Tuna salad - mix of salads, fresh vegetables, corn, egg, olives, vinegrette
+P - (danie mięsne)Sałata z łososiem – mix sałat, świeże warzywa, pomarańcza, kapary, sos vinegrette  (meat dish) Salmon salad - mix of salads, fresh vegetables, oragne, capers, vinegrette
+P - (danie mięsne)Sałata z serem lazur – mix sałat, warzywa, grillowany indyk, gruszka, orzechy włoskie, sos malinowo- balsamiczny  (meat dish) blue cheese salad - mix of salads, vegetables, grilles turkey, pear, walnuts, raspberry sauce
+P - (Wege) Zapiekanka makaronowa z warzywami i dipem jogurtowym z suszonymi pomidorami  (vege) pasta gratin with vegetables and yoghurt dip with dried tomatoes
+P - (wege)Tortilla z warzywami i salsą pomidorowo-bazyliową  (vege) Tortilla with vegetables and tomato-basil sauce
+P - (wege)Camembert panierowany z żurawiną i ananasem  (vege)  breaded Camembert with cranberry and pineapple
+P - (wege)Pierogi ruskie  (vege) Dumplings stuffed with mixture of potatoes and cottage cheese
+P - (wege)Pierogi z kapustą i grzybami  (vege) Dumplings with sauerkraut and mushrooms
+P - (wege)Sałata z kaszą jaglaną – mix sałat, ser feta, pomidorki koktajlowe, rukola  (Wege) Salad with millet - mixed lettuce, feta cheese, cherry tomatoes, arugula
+P - (wege)Sałatka grecka – mix sałat, świeże warzywa, ser feta, oliwki, sos vinegrette  (Wege) "Greek" salad- lettuce mix, fresh vegetables, feta cheese, olives, vinaigrette
+P - (wege)Sałata z kozim serem – mix sałat, świeże warzywa, pomarańcza, żurawina, orzechy włoskie, sos balsamiczno-malinowy  (Wege)Salad with goat cheese  - lettuce mix, fresh vegetables, orange, cranberries, walnuts,, raspberry sauce
+
+
+09.02.2017
+
+Z - Krem dyniowo-marchewkowy z nutą imbiru  Pumpkin-carrot cream with ginger0
+Z - Krem dyniowo-marchewkowy z nutą imbiru  Pumpkin-carrot cream with ginger1
+Z - Krem dyniowo-marchewkowy z nutą imbiru  Pumpkin-carrot cream with ginger2
+Z - Krem dyniowo-marchewkowy z nutą imbiru  Pumpkin-carrot cream with ginger3
+P - (Danie mięsne) Tradycyjny kotlet schabowy, ziemniaki, kapusta zasmażana  (meat dish) Traditional pork chop, potatoes, fried cabbage
+P - (Danie mięsne) Bitki wieprzowe w sosie własnym, kasza, buraczki  (meat dish) Pork meatball in its own juice, kasha, beetroots
+P - (Danie mięsne) Stek wołowy z grilla z cebulką, ziemniaki, surówka  (meat dish) Grilled beef steak with onion, potatoes, salad
+P - (danie miesne)Penne arrabiata- kurczak, mozzarella, cebula w sosie pomidorowym  (meat dish) Penne arrabiata-chicken, mozzarella, onion in tomato sauce
+P - (danie mięsne)Parowana pierś kurczaka z grillowanymi warzywami, ryż, surówka  (meat dish) steamed chicken breast with grilled vegeatables, rice salad
+P - (danie mięsne)Pierogi z mięsem i okrasą  (meat dish)  dumplings with meat and pork scratchings
+P - (danie mięsne)Z kawałkami kurczaka panierowanymi w sezamie - mix sałat, świeże warzywa, kiełki słonecznika, sos miodowo-musztardowy  (meat dish) salad with slices of chicken breaded in sesame seed - mix of salads, fresh vegetables, sunflower sprouts, honey-mustard sauce
+P - (danie mięsne)Sałata Cesar – mix sałat, świeże warzywa, grillowany kurczak, grzanki czosnkowe, parmezan, sos Cesar (jogurtowo-majonezowy)   (meat dish)  Cesar salad - mix of salads, fresh vegetables, grilled chicken, garlic croutons, parmesan, yogurt-mayonnaise sauce
+P - (danie mięsne)Sałata z tuńczykiem – mix sałat, świeże warzywa, kukurydza, jajko, oliwki, sos vinegrette  (meat dish) Tuna salad - mix of salads, fresh vegetables, corn, egg, olives, vinegrette
+P - (danie mięsne)Sałata z łososiem – mix sałat, świeże warzywa, pomarańcza, kapary, sos vinegrette  (meat dish) Salmon salad - mix of salads, fresh vegetables, oragne, capers, vinegrette
+P - (danie mięsne)Sałata z serem lazur – mix sałat, warzywa, grillowany indyk, gruszka, orzechy włoskie, sos malinowo- balsamiczny  (meat dish) blue cheese salad - mix of salads, vegetables, grilles turkey, pear, walnuts, raspberry sauce
+P - (Wege) Placuszki dyniowe z warzywami i dipem tzatziki  (vege) Pumpkin pancakes with vegetables and “tzatziki” dip
+P - (wege)Tortilla z warzywami i salsą pomidorowo-bazyliową  (vege) Tortilla with vegetables and tomato-basil sauce
+P - (wege)Camembert panierowany z żurawiną i ananasem  (vege)  breaded Camembert with cranberry and pineapple
+P - (wege)Pierogi ruskie  (vege) Dumplings stuffed with mixture of potatoes and cottage cheese
+P - (wege)Pierogi z kapustą i grzybami  (vege) Dumplings with sauerkraut and mushrooms
+P - (wege)Sałata z kaszą jaglaną – mix sałat, ser feta, pomidorki koktajlowe, rukola  (Wege) Salad with millet - mixed lettuce, feta cheese, cherry tomatoes, arugula
+P - (wege)Sałatka grecka – mix sałat, świeże warzywa, ser feta, oliwki, sos vinegrette  (Wege) "Greek" salad- lettuce mix, fresh vegetables, feta cheese, olives, vinaigrette
+P - (wege)Sałata z kozim serem – mix sałat, świeże warzywa, pomarańcza, żurawina, orzechy włoskie, sos balsamiczno-malinowy  (Wege)Salad with goat cheese  - lettuce mix, fresh vegetables, orange, cranberries, walnuts,, raspberry sauce
+
+
+
+10.02.2017
+
+Z - Pomidorowa z makaronem (wege)  tomatoe soup with pasta0
+Z - Pomidorowa z makaronem (wege)  tomatoe soup with pasta1
+Z - Pomidorowa z makaronem (wege)  tomatoe soup with pasta2
+Z - Pomidorowa z makaronem (wege)  tomatoe soup with pasta3
+P - (Danie mięsne) Świeżynka wieprzowa z duszonymi warzywami, ziemniaki, buraczki  (meat dish) Pork “świeżynka” with stewed vegetables, potatoes, beetroots
+P - (Danie mięsne) Kotlet de’volaille, ziemniaki, marchewka z groszkiem  (meat dish) “de’volaille” chop, potatoes, carrot with pea
+P - (Danie mięsne) Pulpety wieprzowe w sosie koperkowym, kasza, surówka (meat dish) Pork meatballs with dill sauce, kasha, salad 
+P - (Danie mięsne) Mintaj w złocistej panierce z grillowanymi warzywami, ryż, surówka  (meat dish) Breaded pollock with grilled vegetables, rice, salad
+P - (danie miesne)Alio e’olio z indykiem, czosnkiem, chilli, oliwą i świeżą natką  (meat dish) Alio e’olio with turkey, garlic, chilli, olive oil and fresh parsley
+P - (danie mięsne)Parowana pierś kurczaka z grillowanymi warzywami, ryż, surówka  (meat dish) steamed chicken breast with grilled vegeatables, rice salad
+P - (danie mięsne)Pierogi z mięsem i okrasą  (meat dish)  dumplings with meat and pork scratchings
+P - (danie mięsne)Z kawałkami kurczaka panierowanymi w sezamie - mix sałat, świeże warzywa, kiełki słonecznika, sos miodowo-musztardowy  (meat dish) salad with slices of chicken breaded in sesame seed - mix of salads, fresh vegetables, sunflower sprouts, honey-mustard sauce
+P - (danie mięsne)Sałata Cesar – mix sałat, świeże warzywa, grillowany kurczak, grzanki czosnkowe, parmezan, sos Cesar (jogurtowo-majonezowy)   (meat dish)  Cesar salad - mix of salads, fresh vegetables, grilled chicken, garlic croutons, parmesan, yogurt-mayonnaise sauce
+P - (danie mięsne)Sałata z tuńczykiem – mix sałat, świeże warzywa, kukurydza, jajko, oliwki, sos vinegrette  (meat dish) Tuna salad - mix of salads, fresh vegetables, corn, egg, olives, vinegrette
+P - (danie mięsne)Sałata z łososiem – mix sałat, świeże warzywa, pomarańcza, kapary, sos vinegrette  (meat dish) Salmon salad - mix of salads, fresh vegetables, oragne, capers, vinegrette
+P - (danie mięsne)Sałata z serem lazur – mix sałat, warzywa, grillowany indyk, gruszka, orzechy włoskie, sos malinowo- balsamiczny  (meat dish) blue cheese salad - mix of salads, vegetables, grilles turkey, pear, walnuts, raspberry sauce
+P - (Wege) Farfalle z suszonymi pomidorami i szpinakiem w aromatycznymi sosie serowym (meat dish) Farfalle with dried tomatoes and spinach in aromatic cheese sauce
+P - (wege)Tortilla z warzywami i salsą pomidorowo-bazyliową  (vege) Tortilla with vegetables and tomato-basil sauce 
+P - (wege)Camembert panierowany z żurawiną i ananasem  (vege)  breaded Cammembert with cranberry and pineapple
+P - (wege)Pierogi ruskie  (vege) Dumplings stuffed with mixture of potatoes and cottage cheese
+P - (wege)Pierogi z kapustą i grzybami  (vege) Dumplings with sauerkraut and mushrooms
+P - (wege)Sałata z kaszą jaglaną – mix sałat, ser feta, pomidorki koktajlowe, rukola  (Wege) Salad with millet - mixed lettuce, feta cheese, cherry tomatoes, arugula
+P - (wege)Sałatka grecka – mix sałat, świeże warzywa, ser feta, oliwki, sos vinegrette  (Wege) "Greek" salad- lettuce mix, fresh vegetables, feta cheese, olives, vinaigrette
+P - (wege)Sałata z kozim serem – mix sałat, świeże warzywa, pomarańcza, żurawina, orzechy włoskie, sos balsamiczno-malinowy  (Wege)Salad with goat cheese  - lettuce mix, fresh vegetables, orange, cranberries, walnuts,, raspberry sauce
+
+
+
+
+
+
+
+
+# Dobry Obiad
+
+
+06.02.2017
+
+Z - Krem z pieczarek z grzanką  Mushroom cream with crouton0
+Z - Krem z pieczarek z grzanką  Mushroom cream with crouton1
+Z - Krem z pieczarek z grzanką  Mushroom cream with crouton2
+Z - Krem z pieczarek z grzanką  Mushroom cream with crouton3
+P - (Danie mięsne) Pierś kurczaka po włosku, makaron, surówka  (meat dish) Italian chicken breast, pasta, salad
+P - (Danie mięsne) Kotlet wieprzowy w sosie z sera gorgonzola, ziemniaki, surówka  (meat dish) Pork chop in gorgonzola sauce, potatoes, salad
+P - (Danie mięsne) Wołowina w sosie musztardowym, kasza gryczana, surówka  (meat dish) Beef in mustard sauce, buckwheat groats, salad
+P - (danie mięsne)naleśniki po bolońsku z mięsem, sosem pomidorowym i parmezanem  (meat dish) pancakes bolognese with meat, tomato sauce and parmesan
+P - (danie mięsne)sałatka „Meksykańska” (sałata lodowa, kurczak, papryka, kukurydza, ananas, czerwona cebula, papryczki jalapeno, avocado, pikantny sos majonezowo-jogurtowy)  (meat dish) Mexican sald - iceberg lettuce, chicken, pepper, corn, pineapple, red onion, jalapeno, avocado, spicy mayonnaise-yogurt sauce
+P - (danie mięsne)sałatka „Cobba” (sałata lodowa, kurczak, pomidory, bekon, ser pleśniowy, avocado, jajko, kiełki słonecznika, szczypiorek, sos vinegrette)  (meat dish) cobba salad (iceberg lettuce, chicken tomatoes, bacon, bleu cheese, avocado, egg, sunflower sprouts, chives, vinegrette
+P - (danie mięsne)sałatka „Rodos” (sałata lodowa, kurczak, zielony ogórek, czarne oliwki, jogurtowo-majonezowy, sos)  (meat dish) rodos salad (iceberg lettuce, chicken, cucumber, black olives, yogurt-mayonnaise sauce)
+P - (wege)cytrynowy kus kus z cukinią, miętą i fetą  (wege) Lemon cuscus with zucchini, mint and feta cheese
+P - (wege)placek ziemniaczany ze szpinakiem duszonym w pomidorach i sadzonym jajkiem  (wege) Potato pancake with stewed in tomatoes spinach and fried egg
+P - (wege)naleśniki przesmażane ze szpinakiem i białym serem  (wege) Pancakes baked with spinach and cottage cheese
+P - (wege)kotlety sojowe w curry z koperkiem, ziemniaki, surówka  (wege) Soya cutlets in curry with dill, potatoes, salad
+P - (wege)naleśniki z serem i śmietaną  (wege) Pancakes with white cheese and sour cream
+P - (wege)naleśniki z kaszą gryczaną i białym serem  (wege) Pancakes with buckwheat and cottage cheese
+P - (wege)makaron penne z zielonym pesto, suszonymi pomidorami i parmezanem  (wege)Penne pasta with green pesto, dried tomatoes and Parmesan
+P - (wege)kasza gryczana z warzywami i serem feta  (wege) buckwheat roats with vegetables and feta cheese
+P - (wege)ziemniaki z koprem, jajkami sadzonymi i zsiadłym mlekiem  (wege) Potatoes with dill, fried eggs and curds
+P - (wege)sałatka „Grecka” (sałata lodowa, pomidor, papryka, ogórek, czerwona cebula, czarne oliwki, ser feta, sos vinegrette)  (wege) "Greek" salad (iceberg lettuce, tomato, pepper, cucumber, red onion, black olives, feta cheese, vinaigrette)
+
+
+07.02.2017
+
+Z - Zupa grochowa  Pea soup0
+Z - Zupa grochowa  Pea soup1
+Z - Zupa grochowa  Pea soup2
+Z - Zupa grochowa  Pea soup3
+P - (Danie mięsne) Bitka drobiowa w ziołowym sosie z tymiankiem i rozmarynem, kasza gryczana, surówka  (meat dish) 
+P - (Danie mięsne) Kotlet schabowy w pikantnej panierce, ziemniaki, surówka  (meat dish) Hot breaded pork chop, potatoes, salad
+P - (Danie mięsne) Wołowina w sosie śliwkowym, ryż, surówka  (meat dish) Beef in plum sauce, rice, salad
+P - (danie mięsne)muszle nadziewane tuńczykiem, pomidorami, czarnymi oliwkami i serem mozarella  (meat dish) Pasta shells with tuna, tomatoes, black olives and mozzarella
+P - (danie mięsne) sałata „Jukatan” (sałata lodowa, avocado, wędzony łosoś, ser feta, czosnkowy sos vinegrette) (meat dish) "Yucatan" salad (iceberg lettuce, avocado, smoked salmon, feta cheese, garlic vinaigrette)
+P - (danie miesne)naleśniki meksykańskie z kurczakiem, pikantną salsa i papryczkami jalapeno  (meat dish) mexican pancakes with chicken, spicy salsa and jalapeno pepper
+P - (danie miesne)sałata „Gyros” (sałata lodowa, kurczak, ogórek kwaszony, kukurydza, prażona cebulka, pikantny sos majonezowo-jogurtowy)  (meat dish) “Gyros” salad (iceberg lettuce, chicken, pickled cucumber, corn, roast onion, spicy mayonnaise-yoghurt sauce)
+P - (danie miesne)sałata „Pleśniowa” (lodowa, makaron, kurczak, gruszka, praż. migdały, sos z sera pleśniowego)  (meat dish) “Blue cheese” salad(iceberg lettuce, pasta, chicken, pear, roast almonds, blue cheese sauce)
+P - (Wege) jarskie kotlety z brokułów z sosem „tysiąc wysp” (Wege) vegetarian cutlets with broccoli and “Thousand Island” dressing
+P - (Wege) afrykańska chacalaca z ryżem (jarzyny – marchew, zielony groszek, pomidory, cebula i papryka duszone z curry i imbirem  (Wege) African Chacalaca with rice (vegetables - carrots, green beans, tomatoes, onions and peppers stewed with curry and ginger
+P - (Wege) wegetariańskie leczo z cukinią, papryką i pomidorami, makaron  (Wege) Vegetarian Lecsó with zucchini, peppers and tomatoes, pasta
+P - (Wege) naleśniki z serem waniliowym i musem truskawkowym  (Wege) Pancakes with vanilla  cheese and strawberry mousse
+P - (Wege) naleśniki zapiekane ze szpinakiem, świeżymi pomidorami i serem mozarella (Wege) Pancakes baked with spinach, fresh tomatoes and mozarella cheese
+P - (Wege) kasza gryczana z jajkami sadzonymi i zsiadłym mlekiem  (Wege) Buckwheat with fried eggs and curds
+P - (Wege) jarzynowe curry z ryżem  (Wege) Curry Vegetable with rice
+P - (Wege) sałata „Capri” (sałata lodowa, makaron z zielonym pesto, pomidory, pestki słonecznika, parmezan, sos vinegrette) (Wege) "Capri" salad (iceberg lettuce, pasta with green pesto, tomatoes, sunflower seeds, parmesan, vinaigrette)
+
+08.02.2017
+
+Z - Kartoflanka z chrzanem  Potato soup with horseradish0
+Z - Kartoflanka z chrzanem  Potato soup with horseradish1
+Z - Kartoflanka z chrzanem  Potato soup with horseradish2
+Z - Kartoflanka z chrzanem  Potato soup with horseradish3
+Z - Rosół z makaronem  Chicken soup with pasta0
+Z - Rosół z makaronem  Chicken soup with pasta1
+Z - Rosół z makaronem  Chicken soup with pasta2
+Z - Rosół z makaronem  Chicken soup with pasta3
+P - (Danie mięsne) Mielony drobiowy kotlet z pieczarkami z patelni, ziemniaki, surówka  (meat dish) Pork hamburger with fried mushrooms, potatoes, salad
+P - (Danie mięsne) Wieprzowy zraz Podstoliny w sosie musztardowym nadziewany razowym chlebem, kasza gryczana, surówka  (meat dish) “Podstolina” pork paupiette in mustard sauce with brown bread, buckwheat groats, salad
+P - (Danie mięsne) Meksykańskie chili con carne, ryż, surówka  (meat dish) Mexican chili con carne, rice, salad
+P - (danie mięsne))naleśniki przesmażane ze szpinakiem i wędzonym łososiem  (meat dish) Pancakes fried with spinach and smoked salmon
+P - (danie mięsne)sałata „Przysmak kapitana” (sałata lodowa, ser brie, pomidory, wędzony łosoś, parmezan, musztardowy sos vinegrette)  (meat dish) " Delicacy Captain" salad (Iceberg lettuce, brie cheese, tomatoes, smoked salmon, parmesan, mustard vinaigrette)
+P - (danie mięsne))sałata „Marynarska” (sałata lodowa, pomidory, ogórek, tuńczyk, czerwona cebula, jajko, czarne oliwki, sos vinegrette)  (meat dish) "Marine" salad(Iceberg lettuce, tomatoes, cucumber, tuna, red onion, egg, black olives, vinaigrette)
+P - (danie miesne)Naleśniki po bolońsku  (meat dish) pancakes bolognese
+P - (danie miesne)placek ziemniaczany po węgiersku  (meat dish) Hungarian potato pancake
+P - (danie miesne)sałatka Rodos (sałata lodowa, grillowany kurczak, feta, czarne oliwki, zielony ogórek, majonezowo jogurtowy sos czosnkowy)  (meat dish) rodos salad (iceberg lettuce, grilled chicken, feta cheese, black olives, green cucumber,yogurt-mayonnaise sauce)
+P - (Danie mięsne) sałatka Cesar z kurczakiem. sałata rzymska, grillowany kurczak, grzanki czosnkowe, parmezan, sos jogurtowo majonezowy  (Meat dish) "Cesar" salad with chicken. romaine lettuce, grilled chicken, garlic croutons, parmesan, yoghurt -mayonnaise sauce
+P - (Wege) bakłażan zapiekany z zielonym pesto, pastą z suszonych pomidorów i serem brie, grzanki  (Wege) eggplant baked with green pesto,dried tomato spread and brie cheese, croutons
+P - (Wege) ciecierzyca po bretońsku, ryż  (vege) Chickpeas in tomato sauce, rice
+P - (Wege) racuchy maślane z czekoladą  (vege) buttery crumpets with chocolate
+P - (Wege) naleśniki z serem, rodzynkami i konfitura wiśniowa  (vege) Pancakes with cheese, raisins and cherry jam
+P - (Wege) ziemniaki z koprem, jajkami sadzonymi i zsiadłym mlekiem  (vege) Potatoes with dill, fried eggs and curds
+P - (wege)muszle nadziewane serem gorgonzola  (vege) Pasta shells with gorgonzola cheese
+P - (wege)kus kus z zielonym groszkiem, suszonymi pomidorami i sadzonym jajkiem  (vege) Cuscus with green peas, dried tomatoes and fried egg
+P - (wege)zapiekane naleśniki z farszem z warzyw  (vege) Pancakes stuffed with vegetables
+P - (wege)makaron ryżowy smażony z fasolką szparagową, imbirem i tofu  (vege) Rice noodles fried with green beans, ginger and tofu
+
+
+
+09.02.2017
+Z - Zupa meksykańska z mieloną wołowiną i kukurydzianymi nachos  Mexican soup with ground beef and corn nachos0
+Z - Zupa meksykańska z mieloną wołowiną i kukurydzianymi nachos  Mexican soup with ground beef and corn nachos1
+Z - Zupa meksykańska z mieloną wołowiną i kukurydzianymi nachos  Mexican soup with ground beef and corn nachos2
+Z - Zupa meksykańska z mieloną wołowiną i kukurydzianymi nachos  Mexican soup with ground beef and corn nachos3
+P - (Danie mięsne) Pierś kurczaka nadziewana serem brie, żurawina, ziemniaki, surówka  (meat dish) Chicken breast with brie cheese, cranberry, potatoes, salad
+P - (Danie mięsne) Transylwański gulasz wieprzowy z kapustą I łazankami, surówka  (meat dish) Transylvanian pork goulash with sauerkraut and fettuccine, salad
+P - (Danie mięsne) Wołowina w jarzynach, kasza gryczana, surówka  (meat dish) Beef in vegetables, buckwheat groats, salad
+P - (Danie mięsne) placki z cukinii z wędzonym łososiem, dip ziołowy  (meat dish) Courgette fritters with smoked salmon, herby dip
+P - (Danie mięsne) naleśniki przesmażane z pieczarkami w koszulce z boczku  (Meat dish) Pancakes fried with mushrooms in bacon
+P - (Danie mięsne) naleśniki zapiekane z grillowanym kurczakiem  (Meat dish) Pancakes baked  with grilled chicken
+P - (Danie mięsne) sałata „Cesar z pomidorami” (sałata rzymska, kurczak, pomidor, parmezan, grzanki pomidorowe, vinegr.) (Meat dish) "Cesar with tomatoes" salad (romaine lettuce, chicken, tomato, parmesan, tomato croutons , vinaigrette.)
+P - (wege)naleśniki z musem jabłkowo-morelowym  (vege) pancakes with apple-apricot mousse
+P - (wege)sycylijska caponata z grzanką czosnkową  (vege) sicilian caponata with garlic toast
+P - (wege)kasza gryczana z jajkami sadzonymi i zsiadłym mlekiem  (vege) buckwheat with fried egg and curds
+P - (wege)francuskie ratatouille z ryżem  (vege) french ratatouille with rice
+P - (wege)meksykańska potrawka z fasoli z jajkiem w koszulce  (vege) mexican fricassee with poached egg
+P - (wege)sałata Trzy sery”(lodowa, ser brie, ser pleśniowy, parmezan, gruszka, czosnkowy sos vinegrette.)  (vege) "trzy sery" salad (iceberg lettuce, brie salad, blue cheese, parmesan, pear, garlic vinaigrette)
+P - (wege)sałata „Tunezyjska” (sałata lodowa, pomidor, zielony ogórek, ogórek kwaszony, papryka, czerwona cebula, jajko, tuńczyk, sos vinegrette)  (vege) “Tunisian” salad - iceberg lettuce, tomato, cucumber, gherkin, pepper, red onion, egg, tuna, vinegrette
+P - (wege)sałata „Trzy kolory” (lodowa, makaron, pomidor, mozarella, avocado, sos vinegr.musztarda)  (vege) "Three colors" salad (iceberg lettuce, tomatoes, mozzarella, avocado, vinaigrettemustard sauce)
+
+
+
+
+10.02.2017
+Z - Jarzynowe flaczki z makaronem  vegetable tripe with pasta0
+Z - Jarzynowe flaczki z makaronem  vegetable tripe with pasta1
+Z - Jarzynowe flaczki z makaronem  vegetable tripe with pasta2
+Z - Jarzynowe flaczki z makaronem  vegetable tripe with pasta3
+P - (Danie mięsne) Filet z mintaja zapiekany z pieczarkami, ziemniaki, surówka (meat dish) pollock baked with mushrooms, potatoes, salad
+P - (Danie mięsne) Udko kurczaka pieczone w jogurcie z czosnkiem, kasza gryczana, surówka,  (meat dish) Baked chicken leg in yoghurt with garlic, buckwheat groats, salad
+P - (danie miesne)Turecki kebab z mielonej wołowiny, ryż, surówka  (meat dish) Turkish beef kebab, rice, salad
+P - (Danie mięsne) sałatka “Capriciosa” (sałata lodowa, pomidory, bekon, czarne oliwki, grzanki serowe, ciemny sos vinegrette)  (meat dish) “Capriciosa” salad (iceberg lettuce, tomatoes, bacon, black olives, cheese croutons, dark vinegrette)
+P - (danie mięsne)sałata „Z grillowanym kurczakiem” (sałata lodowa, makaron z zielonym pesto, grillowany kurczak, suszone pomidory, pestki i kiełki słonecznika, sos vinegrette  (meat dish) grilled chicken salad (iceberg lettuce, pasta with green pesto, grilled chicken, dried potatoes, sunflowers seeds and sprouts, vinegrette
+P - (wege)kotleciki z tuńczyka z meksykańskim sosem z chili chipotle, jarzyna gotowana  (vege) tuna chops with mexican sauce with chilli chipotle, boiled vegetables
+P - (wege)sałatka „Tuna” (sałata lodowa, pomidor, tuńczyk, paluszki krabowe, czarne oliwki, sos vinegrette”  (vege) salad "tuna" (iceberg lettuce, tomato, tuna, crab sticks, black olives, \vinaigrette " )
+P - (wege)zapiekanka makaronowa z łososiem wędzonym, szpinakiem i pomidorami  (vege) pasta gratin with smoked salmon, spinach and tomatoes
+P - (wege)racuchy z jabłkami i cukrem pudrem  (vege) pancakes with apples and powdered sugar
+P - (wege)ziemniaki z koprem, jajkami sadzonymi i zsiadłym mlekiem  (vege) potatoes with dill, poached eggs and curds
+P - (wege)naleśniki meksykańskie z pieczarkami, pikantną salsą i papryczkami jalapeno  (vege) mexican pancakes with mushrooms, spicy salsa and jalapeno
+P - (wege)makaron penne po neapolitańsku z sosem pomidorowym i parmezanem  (vege) neapolitan penne with tomato sauce and parmesan
+P - (wege)papryka w sosie pomidorowym nadziewana ryżem i pieczarkami  (vege) peppers in tomato sauce stuffed with rice and mushrooms
+P - (Wege) smażone tofu z marynaty miodowej z tymiankiem, ryż, surówka  (vege) fried tofu in honey marinade with thyme, rice, sald
+P - (wege)naleśniki z serem i śmietaną  (vege) pancakes with white cheese and sour cream
+P - (wege)sałata „Caprese” (pomidor, mozarella, zielone pesto, bazylia, sos balsamiczny)  (vege) salad "caprese" (tomato, mozzarella, green pesto, basil, balsamic sauce)
+P - (wege)sałata „Zielono mi” (sałata lodowa, ser pleśniowi, kiwi, avocado, gruszka, czosnkowy sos vinegrette)  (vege) "zielono mi" salad (iceberg lettuce, bleu cheese, kiwi, avocado, pear, garlic vinegrette)
+
+
+
+
+# Matsurisushi
+
+06.02.2017
+
+E - Sushi zestaw 1 (6x futomaki pieczony łosoś, 2x hosomaki ogórek, 2x hosomaki omlet tamago)
+E - Sushi zestaw 2 (3x futomaki surowy łosoś, 2x hosomaki surowy łosoś, 2x hosomaki ogórek, 2x california rolls, 1x nigiri krewetka) 
+E - Sushi zestaw wege (6x futomaki wege, 2x california wege, 1x nigiri tamago)
+
+07.02.2017
+
+E - Sushi zestaw 1 (6x futomaki pieczony łosoś, 2x hosomaki ogórek, 2x hosomaki omlet tamago)
+E - Sushi zestaw 2 (3x futomaki surowy łosoś, 2x hosomaki surowy łosoś, 2x hosomaki ogórek, 2x california rolls, 1x nigiri krewetka) 
+E - Sushi zestaw wege (6x futomaki wege, 2x california wege, 1x nigiri tamago)
+
+08.02.2017
+
+E - Sushi zestaw 1 (6x futomaki pieczony łosoś, 2x hosomaki ogórek, 2x hosomaki omlet tamago)
+E - Sushi zestaw 2 (3x futomaki surowy łosoś, 2x hosomaki surowy łosoś, 2x hosomaki ogórek, 2x california rolls, 1x nigiri krewetka) 
+E - Sushi zestaw wege (6x futomaki wege, 2x california wege, 1x nigiri tamago)
+
+09.02.2017
+
+E - Sushi zestaw 1 (6x futomaki pieczony łosoś, 2x hosomaki ogórek, 2x hosomaki omlet tamago)
+E - Sushi zestaw 2 (3x futomaki surowy łosoś, 2x hosomaki surowy łosoś, 2x hosomaki ogórek, 2x california rolls, 1x nigiri krewetka) 
+E - Sushi zestaw wege (6x futomaki wege, 2x california wege, 1x nigiri tamago)
+
+10.02.2017
+
+E - Sushi zestaw 1 (6x futomaki pieczony łosoś, 2x hosomaki ogórek, 2x hosomaki omlet tamago)
+E - Sushi zestaw 2 (3x futomaki surowy łosoś, 2x hosomaki surowy łosoś, 2x hosomaki ogórek, 2x california rolls, 1x nigiri krewetka) 
+E - Sushi zestaw wege (6x futomaki wege, 2x california wege, 1x nigiri tamago)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
