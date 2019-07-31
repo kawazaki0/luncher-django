@@ -1,6 +1,8 @@
 from django import forms
 from django.contrib import admin
-from django.core.exceptions import ValidationError
+from django.core.exceptions import ValidationError, ObjectDoesNotExist
+from django.http import HttpResponseRedirect
+from django.urls import path
 from django.utils.safestring import mark_safe
 
 from luncher.meals import models, usecase
@@ -93,6 +95,7 @@ order_meal.short_description = 'Order selected meals'
 
 @admin.register(models.Meal)
 class MealAdmin(admin.ModelAdmin, ActionMixin):
+    change_list_template = "meals/admin_change_list.html"
     list_display = ('name', 'category', 'price', 'restaurant', 'date')
     list_filter = ('category', 'date', 'restaurant')
     search_fields = ('name', 'category', 'price', 'restaurant')
@@ -107,6 +110,28 @@ class MealAdmin(admin.ModelAdmin, ActionMixin):
     actions = (order_meal,)
     actions_on_top = True
     actions_on_bottom = True
+
+    class ImportFileForm(forms.Form):
+        file = forms.FileField()
+
+    def get_urls(self):
+        urls = super().get_urls()
+        my_urls = [
+            path('import/', self.import_meals_from_file),
+        ]
+        return my_urls + urls
+
+    def import_meals_from_file(self, request):
+        form = self.ImportFileForm(request.POST, request.FILES)
+        if form.is_valid():
+            try:
+                usecase.import_meals_from_file(request.FILES['file'])
+                self.message_user(request, "Meals has been imported")
+            except ObjectDoesNotExist:
+                self.message_user(request, "Error")
+        else:
+            self.message_user(request, "Error")
+        return HttpResponseRedirect("../")
 
 
 @admin.register(models.UserOrder)
